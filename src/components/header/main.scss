@@ -8,9 +8,10 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: absolute;
+    margin-top: 20px;
 
 	.menu-container {
-		width: 100%;
 	    display: flex;
 	    justify-content: center;
 	    align-items: center;
@@ -29,6 +30,7 @@ header {
 				.item {
 					display: inline-block;
 	  				position: relative;
+	  				padding: 10px;
 
 	  				&:hover {
 	  					color: #000;

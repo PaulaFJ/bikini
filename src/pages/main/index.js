@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import api from '../../services/api';
-import './main.css';
+import './main.scss';
+import banner from '../../img/banner.jpg';
+
 export default class Main extends Component{
 	state = {
 		products: [],
@@ -31,19 +33,9 @@ export default class Main extends Component{
 	render() {
 		const { products } = this.state;
 		return (
-			<div className="products-list">
-				{products.map(product => (
-					<article key={product._id}>
-						<strong>{product.title}</strong>
-						<p> {product.description} </p>
+			<div className="container">
+				<img src={banner} alt=""/>
 
-						<a href="">Acessar</a>
-					</article>
-				))}
-				<div className="actions">
-					<button onClick={this.prevPage}>Anterior</button>
-					<button onClick={this.nextPage}>Proximo</button>
-				</div>
 			</div>
 		);
 	}
