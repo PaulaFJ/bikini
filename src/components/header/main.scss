@@ -1,0 +1,58 @@
+header {
+	height: 80px;
+	background: transparent;
+	width: 100%;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.menu-container {
+		width: 100%;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+
+		.navbar {
+			display: inline-block;
+	  		background: transparent;
+	  		color: #fff;
+	  		text-align: left;
+
+			.menu {
+				line-height: 50%;
+	  			font-weight: 700;
+	  			text-transform: uppercase;
+
+				.item {
+					display: inline-block;
+	  				position: relative;
+
+	  				&:hover {
+	  					color: #000;
+	  				}
+
+	  				.submenu { display: block; }
+				}
+			}
+
+			.submenu {
+				font-weight: 300;
+				text-transform: none;
+				display: none;
+				position: absolute;
+				width: auto;
+				background-color: #fff;
+
+				.submenu-item {
+					&:hover {
+						background: rgba(#000, 0.1);
+					}
+				}
+			}
+		}
+	}
+}
+  
